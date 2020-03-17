@@ -51,7 +51,50 @@
 		font-size: 48px;
 	}
 }
+.cta {
+	font-size: var(--text-sm);
+	position: sticky;
+	bottom: 0;
+	padding: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: linear-gradient(to right, #00a99d 0%, #262261 100%);
+}
+.cta__block {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.cta svg {
+	fill: #fff;
+	margin-right: 4px;
+	width: 16px;
+}
+.cta__block + .cta__block {
+	margin-left: 8px;
+}
+.cta__block:hover {
+	text-decoration: none;
+	background: rgba(0, 0, 0, .1);
+}
+.cta__hide {
+	display: none;
+}
 @media (min-width: 1024px) {
+	.cta {
+		justify-content: center;
+	}
+	.cta__hide {
+		display: inline;
+	}
+	.cta__block {
+		flex-direction: row;
+		padding: 8px 12px;
+		background: rgba(255, 255, 255, .2);
+		border-radius: 4px;
+	}
 	.home .wp-block-group__inner-container {
 		max-width: 42rem;
 		margin-left: auto;
