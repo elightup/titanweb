@@ -12,11 +12,7 @@
 	font-size: 36px;
 }
 .home h2 {
-	font-size: var(--text-2xl);
 	text-transform: uppercase;
-}
-.home h3 {
-	font-size: var(--text-xl);
 }
 .section.section {
 	padding: 4rem 0;
@@ -66,5 +62,15 @@
 	}
 	.services .wp-block-column {
 		margin-bottom: 0;
+	}
+
+	.footer .widget_text {
+		flex-basis: 30%;
+	}
+	.footer .widget_nav_menu {
+		flex-basis: 20%;
+	}
+	.footer .widget_media_image {
+		flex-basis: 50%;
 	}
 }
