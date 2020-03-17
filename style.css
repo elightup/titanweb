@@ -8,8 +8,16 @@
  * Template:    estar
  */
 
+.home .header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: none;
+	border-bottom-color: rgba(255,255,255,.2);
+}
 .home h1 {
 	font-size: 36px;
+	color: #fff;
 }
 .home h2 {
 	text-transform: uppercase;
@@ -17,12 +25,35 @@
 .section.section {
 	padding: 4rem 0;
 }
+.hero.hero {
+	padding: 8rem 0 0;
+	background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+	color: #fff;
+	position: relative;
+}
 .hero {
 	text-align: center;
 }
 .hero .wp-block-media-text__content {
 	padding: 0;
 	margin-bottom: 2rem;
+}
+.hero .wp-block-button__link {
+	background: #fff;
+	color: var(--color-dark);
+	font-size: var(--text-lg);
+	padding: 1rem 1.5rem;
+}
+.hero svg {
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+.nav a {
+	font-weight: 500;
 }
 
 .services .wp-block-columns {
@@ -49,6 +80,12 @@
 	}
 	.hero h1 {
 		font-size: 48px;
+	}
+	.nav a {
+		color: #fff;
+	}
+	.nav .sub-menu a {
+		color: inherit;
 	}
 }
 .cta {
