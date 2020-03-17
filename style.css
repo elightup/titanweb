@@ -27,6 +27,9 @@
 	padding: 0;
 	margin-bottom: 2rem;
 }
+.services a {
+	color: inherit;
+}
 
 @media (min-width: 768px) {
 	.hero {
