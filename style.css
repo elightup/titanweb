@@ -94,6 +94,9 @@
 	align-items: center;
 	flex-direction: column;
 }
+.cta__block:hover {
+	text-decoration: none;
+}
 .cta svg {
 	fill: #fff;
 	margin-right: 4px;
@@ -101,10 +104,6 @@
 }
 .cta__block + .cta__block {
 	margin-left: 8px;
-}
-.cta__block:hover {
-	text-decoration: none;
-	background: rgba(0, 0, 0, .1);
 }
 .cta__hide {
 	display: none;
@@ -166,5 +165,8 @@
 		padding: 8px 12px;
 		background: rgba(255, 255, 255, .2);
 		border-radius: 4px;
+	}
+	.cta__block:hover {
+		background: rgba(0, 0, 0, .1);
 	}
 }
