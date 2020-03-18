@@ -77,6 +77,19 @@
 	margin-bottom: .5rem;
 }
 
+/* Recent posts block */
+.wp-block-latest-posts img {
+	height: 220px;
+	width: 100%;
+	display: block;
+	margin-bottom: .75rem;
+}
+.wp-block-latest-posts a {
+	color: var(--color-dark);
+	font-size: var(--text-xl);
+	font-weight: 700;
+}
+
 /* CTA bar at the bottom */
 .cta {
 	font-size: var(--text-sm);
