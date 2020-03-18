@@ -59,6 +59,10 @@
 	width: 100%;
 }
 
+/* Services */
+.services {
+	text-align: center;
+}
 .services .wp-block-columns {
 	margin-bottom: 0;
 }
@@ -107,7 +111,8 @@
 }
 
 @media (min-width: 768px) {
-	.hero {
+	.hero,
+	.services {
 		text-align: left;
 	}
 	.hero h1 {
@@ -128,18 +133,6 @@
 		color: var(--color-accent);
 	}
 
-	.cta {
-		justify-content: center;
-	}
-	.cta__hide {
-		display: inline;
-	}
-	.cta__block {
-		flex-direction: row;
-		padding: 8px 12px;
-		background: rgba(255, 255, 255, .2);
-		border-radius: 4px;
-	}
 	.home .wp-block-group__inner-container {
 		max-width: 42rem;
 		margin-left: auto;
@@ -160,5 +153,18 @@
 	}
 	.footer .widget_media_image {
 		flex-basis: 50%;
+	}
+
+	.cta {
+		justify-content: center;
+	}
+	.cta__hide {
+		display: inline;
+	}
+	.cta__block {
+		flex-direction: row;
+		padding: 8px 12px;
+		background: rgba(255, 255, 255, .2);
+		border-radius: 4px;
 	}
 }
