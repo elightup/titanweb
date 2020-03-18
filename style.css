@@ -8,31 +8,37 @@
  * Template:    estar
  */
 
+/* Homepage transparent header */
 .home .header {
 	position: absolute;
 	left: 0;
 	right: 0;
 	background: none;
-	border-bottom-color: rgba(255,255,255,.2);
+	border-bottom-color: rgba(255, 255, 255, .2);
 }
-.home h1 {
-	font-size: 36px;
+.home .menu-toggle {
 	color: #fff;
 }
+
+/* Sections */
 .home h2 {
 	text-transform: uppercase;
 }
-.section.section {
+.section,
+.section.has-background {
 	padding: 4rem 0;
 }
-.hero.hero {
+
+/* Hero section */
+.hero {
 	padding: 8rem 0 0;
 	background: linear-gradient(to top, #00a99d 0%, #262261 100%);
-	color: #fff;
 	position: relative;
-}
-.hero {
 	text-align: center;
+}
+.hero h1 {
+	font-size: 36px;
+	color: #fff;
 }
 .hero .wp-block-media-text__content {
 	padding: 0;
@@ -52,9 +58,6 @@
 	right: 0;
 	width: 100%;
 }
-.nav a {
-	font-weight: 500;
-}
 
 .services .wp-block-columns {
 	margin-bottom: 0;
@@ -70,24 +73,7 @@
 	margin-bottom: .5rem;
 }
 
-@media (min-width: 768px) {
-	.hero {
-		text-align: left;
-	}
-	.hero .wp-block-media-text__content {
-		padding-right: 4rem;
-		margin: 0;
-	}
-	.hero h1 {
-		font-size: 48px;
-	}
-	.nav a {
-		color: #fff;
-	}
-	.nav .sub-menu a {
-		color: inherit;
-	}
-}
+/* CTA bar at the bottom */
 .cta {
 	font-size: var(--text-sm);
 	position: sticky;
@@ -119,7 +105,29 @@
 .cta__hide {
 	display: none;
 }
+
+@media (min-width: 768px) {
+	.hero {
+		text-align: left;
+	}
+	.hero h1 {
+		font-size: 48px;
+	}
+	.hero .wp-block-media-text__content {
+		padding-right: 4rem;
+		margin: 0;
+	}
+}
 @media (min-width: 1024px) {
+	.home .nav .menu > li > a,
+	.home .nav .menu > li > .menu-text {
+		color: #fff;
+	}
+	.home .nav .menu > li:hover > a,
+	.home .nav .menu > li:hover > .menu-text {
+		color: var(--color-accent);
+	}
+
 	.cta {
 		justify-content: center;
 	}
