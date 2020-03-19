@@ -57,3 +57,28 @@ function titanweb_setup() {
 		]
 	] );
 }
+
+add_action( 'wp_head', 'titanweb_default_og_image' );
+
+function titanweb_default_og_image() {
+	if ( is_singular() ) {
+		$data = get_post_meta( get_queried_object_id(), 'slim_seo', true );
+		if ( has_post_thumbnail() || ! empty( $data['facebook_image'] ) ) {
+			return;
+		}
+	}
+	if ( is_tax() || is_category() || is_tag() ) {
+		$data = get_term_meta( get_queried_object_id(), 'slim_seo', true );
+		if ( ! empty( $data['facebook_image'] ) ) {
+			return;
+		}
+	}
+	$image_id = 153;
+	$image = wp_get_attachment_image_src( $image_id );
+	$alt = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+
+	echo "<meta property='og:image' content='{$image[0]}'>\n";
+	echo "<meta property='og:image:width' content='{$image[1]}'>\n";
+	echo "<meta property='og:image:height' content='{$image[2]}'>\n";
+	echo "<meta property='og:image:alt' content='{$alt}'>\n";
+}
