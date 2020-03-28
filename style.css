@@ -71,7 +71,7 @@
 	margin-bottom: 1.5rem;
 }
 .services svg {
-	fill: currentColor;
+	fill: var(--color-base);
 	margin-bottom: .5rem;
 }
 
