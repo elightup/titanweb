@@ -71,7 +71,7 @@
 	margin-bottom: 1.5rem;
 }
 .services svg {
-	opacity: .75;
+	fill: currentColor;
 	margin-bottom: .5rem;
 }
 
