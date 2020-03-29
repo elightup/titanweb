@@ -135,6 +135,12 @@
 }
 
 
+/* Go to top */
+.go-to-top {
+	bottom: 72px;
+}
+
+
 /* FluentForms success message */
 .ff-message-success {
 	border-radius: .25rem;
